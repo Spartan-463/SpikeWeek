@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\spart\\.nuget\\packages\\": {}
+    "C:\\Users\\har_j\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spart\\Documents\\Post Secondary\\COSC 205 - Project Mgmt\\SpikeLab\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
+      "projectUniqueName": "C:\\Users\\har_j\\Source\\Repos\\SpikeWeek2\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
       "projectName": "SpikeWeekHomeScreen",
-      "projectPath": "C:\\Users\\spart\\Documents\\Post Secondary\\COSC 205 - Project Mgmt\\SpikeLab\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
-      "packagesPath": "C:\\Users\\spart\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spart\\Documents\\Post Secondary\\COSC 205 - Project Mgmt\\SpikeLab\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\obj\\",
+      "projectPath": "C:\\Users\\har_j\\Source\\Repos\\SpikeWeek2\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
+      "packagesPath": "C:\\Users\\har_j\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\har_j\\Source\\Repos\\SpikeWeek2\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\spart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\har_j\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -22,108 +22,117 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(190, 355)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(189, 59)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Goals, Achievments && Achievements"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(394, 355)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(189, 59)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Settings"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(135, 145)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(482, 192)
-        Me.GroupBox1.TabIndex = 7
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Food && Activity"
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(55, 105)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(189, 58)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Nutrition"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(55, 41)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(189, 58)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Exercises"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(259, 41)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(189, 58)
-        Me.Button3.TabIndex = 7
-        Me.Button3.Text = "Body"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(259, 105)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(189, 58)
-        Me.Button4.TabIndex = 8
-        Me.Button4.Text = "Sleep"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(135, 48)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(495, 46)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Welcome to Health App v00.1"
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button2)
-        Me.Name = "Form1"
-        Me.Text = "Home Screen"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Button2 = New Button()
+        Button7 = New Button()
+        GroupBox1 = New GroupBox()
+        Button4 = New Button()
+        Button3 = New Button()
+        Button5 = New Button()
+        exercisesBTN = New Button()
+        Label1 = New Label()
+        GroupBox1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(166, 266)
+        Button2.Margin = New Padding(3, 2, 3, 2)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(165, 44)
+        Button2.TabIndex = 1
+        Button2.Text = "Goals, Achievments && Achievements"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button7
+        ' 
+        Button7.Location = New Point(345, 266)
+        Button7.Margin = New Padding(3, 2, 3, 2)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(165, 44)
+        Button7.TabIndex = 6
+        Button7.Text = "Settings"
+        Button7.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(Button4)
+        GroupBox1.Controls.Add(Button3)
+        GroupBox1.Controls.Add(Button5)
+        GroupBox1.Controls.Add(exercisesBTN)
+        GroupBox1.Location = New Point(118, 109)
+        GroupBox1.Margin = New Padding(3, 2, 3, 2)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Padding = New Padding(3, 2, 3, 2)
+        GroupBox1.Size = New Size(422, 144)
+        GroupBox1.TabIndex = 7
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Food && Activity"
+        ' 
+        ' Button4
+        ' 
+        Button4.Location = New Point(227, 79)
+        Button4.Margin = New Padding(3, 2, 3, 2)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(165, 44)
+        Button4.TabIndex = 8
+        Button4.Text = "Sleep"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(227, 31)
+        Button3.Margin = New Padding(3, 2, 3, 2)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(165, 44)
+        Button3.TabIndex = 7
+        Button3.Text = "Body"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(48, 79)
+        Button5.Margin = New Padding(3, 2, 3, 2)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(165, 44)
+        Button5.TabIndex = 6
+        Button5.Text = "Nutrition"
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' exercisesBTN
+        ' 
+        exercisesBTN.Location = New Point(48, 31)
+        exercisesBTN.Margin = New Padding(3, 2, 3, 2)
+        exercisesBTN.Name = "exercisesBTN"
+        exercisesBTN.Size = New Size(165, 44)
+        exercisesBTN.TabIndex = 5
+        exercisesBTN.Text = "Exercises"
+        exercisesBTN.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(118, 36)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(401, 37)
+        Label1.TabIndex = 8
+        Label1.Text = "Welcome to Health App v00.1"
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(700, 338)
+        Controls.Add(Label1)
+        Controls.Add(GroupBox1)
+        Controls.Add(Button7)
+        Controls.Add(Button2)
+        Margin = New Padding(3, 2, 3, 2)
+        Name = "Form1"
+        Text = "Home Screen"
+        GroupBox1.ResumeLayout(False)
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 
@@ -133,6 +142,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents exercisesBTN As Button
     Friend WithEvents Label1 As Label
 End Class
