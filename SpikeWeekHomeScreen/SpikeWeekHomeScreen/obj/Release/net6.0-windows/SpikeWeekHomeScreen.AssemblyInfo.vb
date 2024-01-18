@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("SpikeWeekHomeScreen"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6830c300fa08ec9c1b494534edf8469e6bf46373"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d73e945852d97e0677f81a7c74a76d38c7dfb0d"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("SpikeWeekHomeScreen"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("SpikeWeekHomeScreen"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

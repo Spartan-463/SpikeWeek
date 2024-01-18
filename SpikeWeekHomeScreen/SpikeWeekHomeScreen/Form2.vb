@@ -2,6 +2,8 @@
     Dim fileHelper As New FileHelper("exerciseLog")
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         outputLBL.Text = fileHelper.intializeFile()
+        removeBTN.Enabled = False
+
     End Sub
 
 
@@ -20,7 +22,7 @@
             Next
         End If
 
-
+        lastRecordNumLBL.Text = fileHelper.getRecordNumber()
         'experimenting with DGV
 
 
@@ -32,7 +34,7 @@
             For Each item As String In tempList
                 col = item.Split(",")
                 'testDGV.Rows.Add(col(0), col(1), col(2), col(3), col(4), col(5))
-                testDGV.Rows.Add(col(0), col(1), col(2), col(3), col(4))
+                testDGV.Rows.Add(col(0), col(1), col(2), col(3), col(4), col(5))
             Next
         End If
 
@@ -47,17 +49,19 @@
             'fileHelper.updateFile("2023-02-09,bicep curls")
             fileHelper.writeData(exerciseDTP.Value.ToString("yyyy-MM-dd") + "," + exerciseTBX.Text + "," + CStr(setsNUD.Value) + "," + CStr(repsNUD.Value) + "," + CStr(weightNUD.Value))
         End If
+
     End Sub
 
-    Private Sub testDGV_RowStateChanged(sender As Object, e As DataGridViewRowStateChangedEventArgs) Handles testDGV.RowStateChanged
+    Private Sub testDGV_RowStateChanged(sender As Object, e As DataGridViewRowStateChangedEventArgs) Handles testDGV.RowStateChanged, removeBTN.Click
         Try
             If e.StateChanged = DataGridViewElementStates.Selected Then
 
                 Dim selectedRow As DataGridViewRow = e.Row
 
                 Dim cellValue As String = selectedRow.Cells("RecordNumber").Value.ToString()
+                fileHelper.removeData(CInt(cellValue))
                 recordLBL.Text = cellValue
-
+                removeBTN.Enabled = True
             ElseIf e.StateChanged = DataGridViewElementStates.None Then
 
                 recordLBL.Text = "not selected"
