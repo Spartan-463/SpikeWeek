@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\spart\\.nuget\\packages\\": {}
+    "C:\\Users\\jason\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spart\\Documents\\Post Secondary\\COSC 205 - Project Mgmt\\SpikeLab\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
+      "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Documents\\School\\Semester 4\\COSC 205\\SpikeLab\\SpikeWeek\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
       "projectName": "SpikeWeekHomeScreen",
-      "projectPath": "C:\\Users\\spart\\Documents\\Post Secondary\\COSC 205 - Project Mgmt\\SpikeLab\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
-      "packagesPath": "C:\\Users\\spart\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spart\\Documents\\Post Secondary\\COSC 205 - Project Mgmt\\SpikeLab\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\obj\\",
+      "projectPath": "C:\\Users\\jason\\OneDrive\\Documents\\School\\Semester 4\\COSC 205\\SpikeLab\\SpikeWeek\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen.vbproj",
+      "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jason\\OneDrive\\Documents\\School\\Semester 4\\COSC 205\\SpikeLab\\SpikeWeek\\SpikeWeekHomeScreen\\SpikeWeekHomeScreen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\spart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
