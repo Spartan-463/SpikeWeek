@@ -46,6 +46,8 @@ Partial Class Form2
         Reps = New DataGridViewTextBoxColumn()
         Weight = New DataGridViewTextBoxColumn()
         recordLBL = New Label()
+        lastRecordNumLBL = New Label()
+        removeBTN = New Button()
         GroupBox1.SuspendLayout()
         CType(weightNUD, ComponentModel.ISupportInitialize).BeginInit()
         CType(repsNUD, ComponentModel.ISupportInitialize).BeginInit()
@@ -247,11 +249,31 @@ Partial Class Form2
         recordLBL.TabIndex = 21
         recordLBL.Text = "diagnostic DGV "
         ' 
+        ' lastRecordNumLBL
+        ' 
+        lastRecordNumLBL.AutoSize = True
+        lastRecordNumLBL.Location = New Point(694, 358)
+        lastRecordNumLBL.Name = "lastRecordNumLBL"
+        lastRecordNumLBL.Size = New Size(41, 15)
+        lastRecordNumLBL.TabIndex = 22
+        lastRecordNumLBL.Text = "Label6"
+        ' 
+        ' removeBTN
+        ' 
+        removeBTN.Location = New Point(678, 376)
+        removeBTN.Name = "removeBTN"
+        removeBTN.Size = New Size(75, 23)
+        removeBTN.TabIndex = 23
+        removeBTN.Text = "Remove Line"
+        removeBTN.UseVisualStyleBackColor = True
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(792, 419)
+        Controls.Add(removeBTN)
+        Controls.Add(lastRecordNumLBL)
         Controls.Add(recordLBL)
         Controls.Add(testDGV)
         Controls.Add(readDTP)
@@ -295,4 +317,6 @@ Partial Class Form2
     Friend WithEvents Reps As DataGridViewTextBoxColumn
     Friend WithEvents Weight As DataGridViewTextBoxColumn
     Friend WithEvents recordLBL As Label
+    Friend WithEvents lastRecordNumLBL As Label
+    Friend WithEvents removeBTN As Button
 End Class

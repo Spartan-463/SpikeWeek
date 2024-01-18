@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Reflection.Metadata
 
 Public Class FileHelper
     ' Properties
@@ -11,7 +12,9 @@ Public Class FileHelper
 
     ' Constructor
     Public Sub New(name As String)
+        intializeFile()
         Me.name = name
+
     End Sub
 
     ' giveFileLength
@@ -66,14 +69,20 @@ Public Class FileHelper
     Public Function intializeFile()
         'all files are stored in the users documents folder
         filename = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\" + name + ".txt"
-        output = New StreamWriter(filename, True)
-        output.Close()
+
+        If Not System.IO.File.Exists(filename) Then
+            File.Create(filename).Dispose()
+        End If
+
+        ' output = New StreamWriter(filename, True)
+        'output.Close()
 
         Return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
 
     End Function
 
     Public Sub writeData(input As String)
+        recordNumber = (getRecordNumber() + 1)
         ' writes to file with a string begining on a new line with the record number
         output = New StreamWriter(filename, True)
         output.WriteLine(CStr(recordNumber) + "," + input)
@@ -83,6 +92,28 @@ Public Class FileHelper
 
     End Sub
 
+    Public Function getRecordNumber()
 
+        Dim tempString As String
+        Try
+            tempString = File.ReadLines(filename).Last()
+
+
+        Catch ex As Exception
+            If (tempString Is Nothing) Then
+                Return 0
+            End If
+        End Try
+
+        Return CInt(tempString.Split(",")(0))
+
+    End Function
+
+    Public Function removeData(recordNumber As Integer)
+
+        Dim lines As List(Of String) = System.IO.File.ReadAllLines(filename).ToList
+        lines.RemoveAt(recordNumber) ' index starts at 1 
+        System.IO.File.WriteAllLines(filename, lines)
+    End Function
 
 End Class
